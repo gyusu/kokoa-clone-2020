@@ -30,3 +30,28 @@
   border-top: var(--main-border);
   padding-top: 15px;
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  order: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
