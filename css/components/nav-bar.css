@@ -8,6 +8,12 @@
   bottom: 0px;
 }
 
+@media only screen and (hover: none) and (pointer: coarse) {
+  .nav {
+    bottom: 50px;
+  }
+}
+
 .nav__list {
   display: flex;
   justify-content: space-between;
